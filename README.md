@@ -13,7 +13,7 @@ API Structure:
 
 
 List page
-This page shows a list of all team members. Note that the subtitle should reflect the number of team members (the screenshot is wrong, it should say 4). Also note that if the team member is an admin, that is listed next to their name. Clicking a team member should show the Edit page. Clicking the plus at the top should show the Add page.
+This page shows a list of all team members. Note that the subtitle should reflect the number of team members. Also note that if the team member is an admin, that is listed next to their name. Clicking a team member should show the Edit page. Clicking the plus at the top should show the Add page.
 
 ![Screenshot from 2022-11-15 14-17-20](https://user-images.githubusercontent.com/67892332/202006474-f4affe5c-36b8-43a0-8ccc-9014aac58906.png)
 
