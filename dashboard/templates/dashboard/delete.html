@@ -1,0 +1,22 @@
+<style> 
+    * { 
+        text-align: center; 
+    }
+    body {
+        border-width:1px; 
+        border-style:solid;
+        border-color:#000000
+    }
+</style>
+
+<body>
+    <p> Delete {{member.FirstName}} </p>
+
+
+    <form method="POST" action=""> 
+        {% csrf_token %}
+        <input type = "submit" name="Confirm"> 
+    </form>
+
+    <a href = {% url 'list' %}>Cancel</a> 
+</body>

@@ -1,5 +1,24 @@
-<h3> Edit Member </h3> 
+<style> 
+    * { 
+        text-align: center; 
+    }
+    body {
+        border-width:1px; 
+        border-style:solid;
+        border-color:#000000
+    }
+</style>
 
-<form> 
-    <input type='submit' name="Edit Member">
-</form>
+<body> 
+    <h3> Edit Member </h3> 
+    <p> Edit contact info, location and role </p> 
+
+    <h4> Info </h4>
+    <form method="POST" action=""> 
+        {% csrf_token %}
+        {{form}}
+        <input type='submit' name="Edit Member">
+
+    </form>
+    <a href = "{% url 'delete_member' member.id %}">Delete</a>    
+</body> 

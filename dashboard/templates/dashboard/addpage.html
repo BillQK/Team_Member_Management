@@ -1,7 +1,24 @@
-<h3> Add member </h3> 
+<style> 
+    * { 
+        text-align: center; 
+    }
+    body {
+        border-width:1px; 
+        border-style:solid;
+        border-color:#000000
+    }
+</style>
 
-<form method="POST" action="add">
-    {% csrf_token %}
-    {{form}}
-    <input type="submit" name="Add-Users">
-</form>
+
+<body> 
+    <h3> Add a team member </h3> 
+    <p> Set email, location and role </p> 
+
+
+    <h4> Info </h4>
+    <form method="POST" action="add">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" name="Add-Users">
+    </form>
+</body
