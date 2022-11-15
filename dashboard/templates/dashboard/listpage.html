@@ -27,9 +27,15 @@
 
         <div class"member">
             <a href = "{% url 'edit_member' member.id %}">
-            <p>{{member.FirstName}} {{member.LastName}}</p>
-            <p>{{member.PhoneNumber}}</p>
-            <p>{{member.Email}}</p>
+            {% if member.admin%}
+                <p>{{member.FirstName}}{{member.LastName}} (Admin)</p>
+                <p>{{member.PhoneNumber}}</p>
+                <p>{{member.Email}}</p>
+            {% else%}
+                <p>{{member.FirstName}} {{member.LastName}} </p>
+                <p>{{member.PhoneNumber}}</p>
+                <p>{{member.Email}}</p>
+            {% endif%}
             </a>
         </div> 
     </div> 
