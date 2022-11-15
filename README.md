@@ -3,6 +3,7 @@
 High Level Implementation 
 Technology: 
 - Django Framework 
+- MySQL 
 
 API Structure:
 / = List Page 
